@@ -27,6 +27,7 @@ class MyApp extends StatelessWidget {
         ),
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
+            foregroundColor: Colors.white,
             backgroundColor: Colors.indigoAccent,
             textStyle: const TextStyle(
               fontSize: 18,
@@ -34,7 +35,7 @@ class MyApp extends StatelessWidget {
             ),
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
             shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(8),
+              borderRadius: BorderRadius.circular(30),
             ),
           ),
         ),
@@ -261,19 +262,6 @@ class _TaskListScreenState extends State<TaskListScreen> {
                 const SizedBox(height: 8),
                 ElevatedButton(
                   onPressed: _addTask,
-                  style: ElevatedButton.styleFrom(
-                    foregroundColor: Colors.white,
-                    backgroundColor: Colors.indigoAccent,
-                    textStyle: const TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                    ),
-                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-                    shape: RoundedRectangleBorder(
-                      borderRadius:
-                          BorderRadius.circular(30), // More circular shape
-                    ),
-                  ),
                   child: const Text('Save Task'),
                 ),
               ],
